@@ -12,13 +12,13 @@ build: [
 ]
 depends: [
   "ocaml" {>= "5.5.0"}
-  "base"
-  "capsule0"
-  "ppx_assert"
-  "ppx_bench"
-  "ppx_inline_test"
-  "ppx_sexp_message"
-  "dune"             {>= "3.17.0"}
+  "base" {>= "v0.18~" & < "v0.19~"}
+  "capsule0" {>= "v0.18~" & < "v0.19~"}
+  "ppx_assert" {>= "v0.18~" & < "v0.19~"}
+  "ppx_bench" {>= "v0.18~" & < "v0.19~"}
+  "ppx_inline_test" {>= "v0.18~" & < "v0.19~"}
+  "ppx_sexp_message" {>= "v0.18~" & < "v0.19~"}
+  "dune" {>= "3.17.0"}
 ]
 available: arch != "x86_32"
 synopsis: "PRNG that can be split into independent streams"
